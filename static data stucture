@@ -1,0 +1,22 @@
+def abc(n):
+    if n==1:
+        return 2
+    b=abc(n-1)
+    print("hai",end=" ")
+    return b+1
+    
+print(abc(5))
+
+
+four ways of code 
+
+
+def abc(n,c):
+    if n==4:
+        return 1
+    c=c+1
+    b=abc(n+1,c)
+    print(c,end=" ")
+    return b*2
+    
+print(abc(1,1))

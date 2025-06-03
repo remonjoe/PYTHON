@@ -1,0 +1,17 @@
+def rcb():
+    return 15
+def csk():
+    return len("DHONI")
+    
+def mi(a):
+    return a-6
+    
+
+def ipl():
+    return [2,3,4]
+
+
+for i in range(rcb(),csk(),mi(3)):
+    for j in ipl():
+        print(j,end=" ")
+    print()

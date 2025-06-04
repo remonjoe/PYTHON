@@ -1,0 +1,10 @@
+class simple:
+    def add(self):
+        return self.a+self.b
+    def dis(self):
+        print("hai")
+r=simple()
+r.a=10
+r.b=20
+print(r.add())
+r.dis()

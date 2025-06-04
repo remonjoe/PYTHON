@@ -1,0 +1,22 @@
+class rect:
+    def set_dim(self,w,h):
+        self.w=w
+        self.h=h
+    def area(self):
+        print(self.w*self.h)
+    def peri(self):
+        print(2*(self.w+self.h))
+        
+l=[]
+n=int(input("enter num of rectangles"))
+for i in range(n):
+    r=rect()
+    w=int(input("enter width of rect{} ".format(i+1)))
+    h=int(input("enter length of rect{}".format(i+1)))
+    r.set_dim(w,h)
+    l.append(r)
+    
+for i in range(n):
+    print('rectangle no {}'.format(i+1))
+    l[i].area()
+    l[i].peri()

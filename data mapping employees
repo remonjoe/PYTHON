@@ -1,0 +1,17 @@
+name="ABCDEFGHIJ"
+names=[i for i in str(name)]
+salary=[10000,20000,12000,55000,45000,20000,25000,600000,55000,40000]
+memo=[0,1,1,1,2,3,2,0,2,2]
+a=list(zip(names,salary,memo))
+remove=[i for i in a if i[1]>40000]
+bal=[i for i in a if i[1]<=40000]
+bal.sort(key=lambda x: x[1],reverse=True)
+to_remove=[]
+for i in bal:
+    if(i[2]>=2):
+        to_remove.append(i)
+    if(len(to_remove)==3):
+        break
+final=remove+to_remove
+for i in final:
+    print("1.{} has been removed - sal {} and memo is {}".format(i[0],i[1],i[2]))
